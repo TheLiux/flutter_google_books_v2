@@ -1,0 +1,24 @@
+name: flutter_google_books_corsov2
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  google_fonts: ^6.2.1
+  json_theme: ^6.5.3+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  assets:
+     - assets/theme/theme.json
