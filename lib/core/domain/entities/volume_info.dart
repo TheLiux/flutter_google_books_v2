@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'volume_info.g.dart';
+
+@JsonSerializable()
 class VolumeInfo {
   final String title;
   final List<String> authors;
@@ -24,4 +29,8 @@ class VolumeInfo {
       return '$prev - $curr';
     });
   }
+
+  factory VolumeInfo.fromJson(Map<String, dynamic> json) => _$VolumeInfoFromJson(json);
+
+  Map<String, dynamic> toJson() => _$VolumeInfoToJson(this);
 }
