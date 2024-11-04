@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart' as dio;
 
 class RequestOptions {
-  final String path;
-  final String data;
+  final String? path;
+  final String? data;
 
   RequestOptions(this.path, this.data);
 
@@ -10,5 +10,8 @@ class RequestOptions {
     return RequestOptions(requestOptions.path, requestOptions.data);
   }
 
-  dio.RequestOptions toDioResponse() => dio.RequestOptions(path: path, data: data);
+  dio.RequestOptions toDioResponse() => dio.RequestOptions(
+        path: path ?? '',
+        data: data,
+      );
 }

@@ -1,3 +1,4 @@
+import 'package:flutter_google_books_corsov2/core/domain/entities/image_links.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'volume_info.g.dart';
@@ -9,13 +10,13 @@ class VolumeInfo {
   final String publisher;
   final String description;
   final int pageCount;
-  final List<String> imageLinks;
+  final ImageLinks imageLinks;
 
   VolumeInfo({
     required this.title,
     required this.authors,
-    required this.publisher,
-    required this.description,
+    this.publisher = 'N/A',
+    this.description = 'N/A',
     required this.pageCount,
     required this.imageLinks,
   });
