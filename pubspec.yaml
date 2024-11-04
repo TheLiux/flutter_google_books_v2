@@ -9,9 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
   flutter_lints: ^4.0.0
   google_fonts: ^6.2.1
   json_theme: ^6.5.3+4
+  meta: ^1.15.0
 
 dev_dependencies:
   flutter_test:
