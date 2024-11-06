@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_google_books_corsov2/core/domain/entities/book.dart';
+import 'package:flutter_google_books_corsov2/core/presentation/screens/home_page/widgets/book_list_tile.dart';
 
 class BookListView extends StatelessWidget {
   final List<Book> books;
@@ -17,13 +18,14 @@ class BookListView extends StatelessWidget {
       );
     }
 
-    return ListView.separated(
-      shrinkWrap: true,
-      itemBuilder: (context, index) => ListTile(
-        title: Text(books[index].volumeInfo.title),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: ListView.separated(
+        shrinkWrap: true,
+        itemBuilder: (context, index) => BookListTile(book: books[index]),
+        separatorBuilder: (context, index) => const Divider(),
+        itemCount: books.length,
       ),
-      separatorBuilder: (context, index) => const Divider(),
-      itemCount: books.length,
     );
   }
 }
