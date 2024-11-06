@@ -9,15 +9,15 @@ class VolumeInfo {
   final List<String> authors;
   final String publisher;
   final String description;
-  final int pageCount;
+  final int? pageCount;
   final ImageLinks imageLinks;
 
   VolumeInfo({
     required this.title,
-    required this.authors,
+    this.authors = const [],
     this.publisher = 'N/A',
     this.description = 'N/A',
-    required this.pageCount,
+    this.pageCount,
     required this.imageLinks,
   });
 
