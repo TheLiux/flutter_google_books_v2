@@ -10,10 +10,12 @@ dependencies:
   flutter:
     sdk: flutter
 
+  auto_route: ^9.2.2
   bloc: ^8.1.4
   dio: ^5.7.0
   logger: ^2.4.0
   flutter_bloc: ^8.1.6
+  flutter_hooks: ^0.20.5
   flutter_lints: ^4.0.0
   get_it: ^8.0.2
   google_fonts: ^6.2.1
@@ -26,6 +28,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  auto_route_generator: ^9.0.0
   build_runner: ^2.4.13
   injectable_generator: ^2.6.2
   json_serializable: ^6.8.0
