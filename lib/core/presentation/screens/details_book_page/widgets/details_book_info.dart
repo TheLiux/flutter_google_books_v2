@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_books_corsov2/core/presentation/screens/details_book_page/widgets/details_book_favourite_button.dart';
 import 'package:flutter_google_books_corsov2/core/presentation/screens/details_book_page/widgets/expand_description_button.dart';
 
 class DetailsBookInfo extends StatelessWidget {
@@ -57,6 +58,7 @@ class DetailsBookInfo extends StatelessWidget {
               ],
             ),
           ),
+          const DetailsBookFavouriteButton(),
         ],
       ),
     );
